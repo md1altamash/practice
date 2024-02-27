@@ -60,3 +60,65 @@ body{
     display: none;
     
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgba(190, 116, 128, 0.648);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#boxs{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px solid rgba(154, 181, 89, 0.394);
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+#story{
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4) ;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#story::-webkit-scrollbar{
+    display: none;
+}
+.dp{
+    width: 80px;
+    height: 80px;
+    border: 3px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 3.5px;
+}
+.dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#full-screen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    
+}
